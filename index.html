@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendar Redirect</title>
+  <script>
+    // Get the current month (0 = January, 11 = December)
+    const monthNames = [
+      "January.html", "February.html", "March.html", "April.html",
+      "May.html", "June.html", "July.html", "August.html",
+      "September.html", "October.html", "November.html", "December.html"
+    ];
+
+    const now = new Date();
+    const monthIndex = now.getMonth(); // current month number
+    const currentMonthFile = monthNames[monthIndex];
+
+    // Redirect to that file
+    window.location.href = currentMonthFile;
+  </script>
+</head>
+<body>
+  <p>Redirecting you to the current month...</p>
+</body>
+</html>
